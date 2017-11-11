@@ -16,6 +16,8 @@ Check Installation:
 
 1.- Open a terminal
 
-2.- type python --version
+2.- type:
+
+    python --version
 
 4.- If you got the next result the installation is complete:
