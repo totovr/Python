@@ -21,3 +21,8 @@ Check Installation:
     python --version
 
 4.- If you got the next result the installation is complete:
+
+![alt text](https://github.com/totovr/Python/tree/master/Images)
+
+
+
