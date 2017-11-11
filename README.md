@@ -22,7 +22,4 @@ Check Installation:
 
 4.- If you got the next result the installation is complete:
 
-    ![alt text](https://github.com/totovr/Python/tree/master/Images)
-
-
-
+![alt text](https://github.com/totovr/OpenCV3/blob/master/Images/Complete.png)
