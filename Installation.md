@@ -4,13 +4,9 @@ Using Python version 3.3.6 in Anaconda for Ubuntu and Os X users
 
 # Installation
 
-Install Python 3
+* Install Python 3.3.6 [Python](https://www.python.org/downloads/)
 
-    https://www.python.org/
-
-Install Anaconda from the offical page (for Python 3.6)
-
-    https://www.anaconda.com/download/#macos
+* Install Anaconda from the official page (for Python 3.6) [Anaconda](https://www.anaconda.com/download/#macos)
 
 Check Installation:
 
