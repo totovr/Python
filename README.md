@@ -60,6 +60,6 @@ I use [SemVer](http://semver.org/) for versioning.
 
 This project is licensed under CC License - see the [LICENSE.md](https://creativecommons.org/licenses/by/4.0/) file for details
 
-## For more references you can Check:
+## For more references you can check:
 
 * [python.org](https://www.python.org/doc/essays/blurb/)
