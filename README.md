@@ -30,7 +30,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 4.- If you got the next result the installation is complete:
 
-![alt text](https://github.com/totovr/Python/blob/master/Images/version%20.png)
+![alt text](hhttps://github.com/totovr/Python/blob/master/Images/version%20.png)
 
 ## Also you can use the next editors to build programs:
 
