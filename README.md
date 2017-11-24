@@ -30,7 +30,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 4.- If you got the next result the installation of Python 3 is complete:
 
-<img src="https://github.com/totovr/Python/blob/master/Images/version.png" width="500">
+<img src="https://github.com/totovr/Python/blob/master/Images/version.png" width="300">
 
 5.- Check this link to know how to use [Anaconda](https://github.com/totovr/Python/tree/Anaconda)
 
