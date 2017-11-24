@@ -58,7 +58,7 @@ I use [SemVer](http://semver.org/) for versioning.
 
 ## License
 
-This project is licensed under CC License - see the [LICENSE.md](https://creativecommons.org/licenses/by/4.0/) file for details
+This project is licensed under The MIT License (MIT) - see the [LICENSE.md](https://github.com/totovr/Python/blob/master/LICENSE.md) file for details
 
 ## For more references you can check:
 
