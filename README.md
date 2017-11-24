@@ -32,7 +32,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 <img src="https://github.com/totovr/Python/blob/master/Images/version.png" width="500">
 
-5.- Check this link to install (Anaconda)[https://github.com/totovr/Python/tree/Anaconda]
+5.- Check this link to know how to use [Anaconda](https://github.com/totovr/Python/tree/Anaconda)
 
 ## Also you can use the next editors to build programs:
 
