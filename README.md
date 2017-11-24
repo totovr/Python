@@ -34,6 +34,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 5.- Check this link to know how to use [Anaconda](https://github.com/totovr/Python/tree/Anaconda)
 
+##Examples:
+
+You can find some examples [here](https://github.com/totovr/Python/tree/Anaconda/Basic)
+
 ## Also you can use the next editors to build programs:
 
 * [Atom](https://atom.io/)
