@@ -28,9 +28,11 @@ These instructions will get you a copy of the project up and running on your loc
 
     python --version
 
-4.- If you got the next result the installation is complete:
+4.- If you got the next result the installation of Python 3 is complete:
 
-![alt text](https://github.com/totovr/Python/blob/master/Images/version.png)
+<img src="https://github.com/totovr/Python/blob/master/Images/version.png" width="500">
+
+5.- Check this link to install (Anaconda)[https://github.com/totovr/Python/tree/Anaconda]
 
 ## Also you can use the next editors to build programs:
 
