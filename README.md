@@ -6,7 +6,7 @@ Python is an interpreted, object-oriented, high-level programming language with 
 
 ## Why Learn Python ?
 
-According to GitHub [Octoverse](https://octoverse.github.com) Python is the second most popular programming language with more than 1M pull requests opened on 2017 and for the IEEE [Spectrum Rank](https://spectrum.ieee.org/computing/software/the-2017-top-programming-languages) python has became the most popular programming language in the 2017 displacing languages like C or Java, also, Python has a lot of packages and libraries for all uses like data science, game programming, web development, astronomy, AI. The names of these libraries and references are listed [here]().
+According to GitHub [Octoverse](https://octoverse.github.com) Python is the second most popular programming language with more than 1M pull requests opened on 2017 and for the IEEE [Spectrum Rank](https://spectrum.ieee.org/computing/software/the-2017-top-programming-languages) python has became the most popular programming language in the 2017 displacing languages like C or Java, also, Python has a lot of packages and libraries for all uses like data science, game programming, web development, astronomy, AI. The names of these libraries and references are listed [here](https://github.com/totovr/Python/blob/master/LIBRARIES_LIST.md).
 
 ## Getting Started
 
@@ -38,7 +38,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 5.- Check this link to know how to use [Anaconda](https://github.com/totovr/Python/tree/Anaconda)
 
-##Examples:
+## Examples:
 
 You can find some examples [here](https://github.com/totovr/Python/tree/Anaconda/Basic)
 
