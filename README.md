@@ -6,8 +6,7 @@ Python is an interpreted, object-oriented, high-level programming language with 
 
 ## Why Learn Python ?
 
-According to GitHub [Octoverse](https://octoverse.github.com) Python is the second most popular programming language with more than 1M pull requests opened on 2017 and for the IEEE [Spectrum Rank](https://spectrum.ieee.org/computing/software/the-2017-top-programming-languages) python has became the most popular programming language in the 2017 displacing languages like C or Java
-
+According to GitHub [Octoverse](https://octoverse.github.com) Python is the second most popular programming language with more than 1M pull requests opened on 2017 and for the IEEE [Spectrum Rank](https://spectrum.ieee.org/computing/software/the-2017-top-programming-languages) python has became the most popular programming language in the 2017 displacing languages like C or Java, also, Python has a lot of packages and libraries for all uses like data science, game programming, web development, astronomy, AI. The names of these libraries and references are listed [here]().
 
 ## Getting Started
 
