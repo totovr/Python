@@ -16,11 +16,13 @@
 
 * **Django:** High level web framework, fast, secure, and scalable, webapps like Instagram, Pinterest or Quora are built using Django.
 
-* **Pygame:** Set of Python modules oriented to 2D game programming but you con also use for creating GUIs (Graphic User Interface), or multimedia software
+* **Astropy:** Software packages designed for astronomy and astrophysics.
 
-* **Pillow:** Python Imaging Library for image processing.
+* **Pygame:** Set of Python modules oriented to 2D game programming but you con also use for creating GUI's (Graphic User Interfaces), or multimedia software.
 
-* **OpenCV:** Open ource Computer Vision Library, supports C, C++, Java and Python for PC, Android or iOS applications, you can check some examples [here](https://github.com/totovr/OpenCV).
+* **Pillow:** Python Imaging Library for image processing (convert images, cutting and merging images, geometrical transformations, color transformations, etc).
+
+* **OpenCV:** Open Source Computer Vision Library, supports C, C++, Java and Python for PC, Android or iOS applications, you can check some examples [here](https://github.com/totovr/OpenCV).
 ## For more references you can check:
 
 * [NumPy Documentation](https://docs.scipy.org/doc/numpy/reference/)
@@ -30,6 +32,7 @@
 * [Seaborn Documentation](https://seaborn.pydata.org/)
 * [SciKit-Learn Documentation](http://scikit-learn.org/stable/documentation.html)
 * [NLTK Documentation](http://www.nltk.org/#)
+* [Astropy Documentation](http://docs.astropy.org/en/stable/)
 * [Django Documentation](https://docs.djangoproject.com/en/2.0/)
 * [Pygame Documentation](https://www.pygame.org/docs/)
 * [Pillow Documentation](http://pillow.readthedocs.io/en/4.3.x/)
