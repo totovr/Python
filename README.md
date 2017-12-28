@@ -61,6 +61,7 @@ I use [SemVer](http://semver.org/) for versioning.
 ### Enrique Calderon Sastre:
 
 * [Github](https://github.com/ecaldrn)
+* [Twitter](https://twitter.com/ecaldrn1)
 
 ## License
 
