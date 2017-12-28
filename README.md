@@ -4,6 +4,11 @@
 
 Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.
 
+## Why Learn Python ?
+
+According to GitHub [Octoverse](https://octoverse.github.com) Python is the second most popular programming language with more than 1M pull requests opened on 2017 and for the IEEE [Spectrum Rank](https://spectrum.ieee.org/computing/software/the-2017-top-programming-languages) python has became the most popular programming language in the 2017 displacing languages like C or Java
+
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
