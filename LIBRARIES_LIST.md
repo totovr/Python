@@ -16,6 +16,11 @@
 
 * **Django:** High level web framework, fast, secure, and scalable, webapps like Instagram, Pinterest or Quora are built using Django.
 
+* **Pygame:** Set of Python modules oriented to 2D game programming but you con also use for creating GUIs (Graphic User Interface), or multimedia software
+
+* **Pillow:** Python Imaging Library for image processing.
+
+* **OpenCV:** Open ource Computer Vision Library, supports C, C++, Java and Python for PC, Android or iOS applications, you can check some examples [here](https://github.com/totovr/OpenCV).
 ## For more references you can check:
 
 * [NumPy Documentation](https://docs.scipy.org/doc/numpy/reference/)
@@ -26,3 +31,6 @@
 * [SciKit-Learn Documentation](http://scikit-learn.org/stable/documentation.html)
 * [NLTK Documentation](http://www.nltk.org/#)
 * [Django Documentation](https://docs.djangoproject.com/en/2.0/)
+* [Pygame Documentation](https://www.pygame.org/docs/)
+* [Pillow Documentation](http://pillow.readthedocs.io/en/4.3.x/)
+* [OpenCV official page](https://opencv.org/)
