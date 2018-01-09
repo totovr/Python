@@ -38,9 +38,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 5.- Check this link to know how to use [Anaconda](https://github.com/totovr/Python/tree/Anaconda)
 
-## Examples:
+## Run simple code:
 
-You can find some examples [here](https://github.com/totovr/Python/tree/Anaconda/Basic)
+You can find [here](https://github.com/totovr/Python/tree/Anaconda/Basic) a simple example
+
+## More examples
+
+This [branch](https://github.com/totovr/Python/tree/Jupyter) a simple example has programs in Jupyter 
 
 ## Also you can use the next editors to build programs:
 
