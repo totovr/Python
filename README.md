@@ -44,7 +44,7 @@ You can find some examples [here](https://github.com/totovr/Python/tree/Anaconda
 
 ## Also you can use the next editors to build programs:
 
-* [Atom](https://atom.io/)
+* [Atom](https://atom.io/) and [Hydrogen](https://atom.io/packages/hydrogen)
 * [Pycharm](https://www.jetbrains.com/pycharm/)
 
 ## Contributing
