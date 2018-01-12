@@ -25,6 +25,7 @@
 * **OpenCV:** Open Source Computer Vision Library, supports C, C++, Java and Python for PC, Android or iOS applications, you can check some examples [here](https://github.com/totovr/OpenCV).
 ## For more references you can check:
 
+* [Examples of the most used Python Libraries](https://github.com/totovr/Python/tree/Jupyter/Libraries_Examples)
 * [NumPy Documentation](https://docs.scipy.org/doc/numpy/reference/)
 * [SciPy Documentation](https://docs.scipy.org/doc/)
 * [Pandas Documentation](http://pandas.pydata.org/pandas-docs/stable/)
