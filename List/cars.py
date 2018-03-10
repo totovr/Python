@@ -3,7 +3,7 @@ print(cars)
 # sort() function order the items of the list by alfabethic order
 cars.sort()
 print(cars)
-# also is possinle to sort in the reverse order
+# also is possible to sort in the reverse order
 cars.sort(reverse=True)
 print(cars)
 # To sort just one time is possible to use sorted('variable')

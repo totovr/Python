@@ -3,7 +3,7 @@ print(motorcycles)
 # change the value 0
 motorcycles[0] = "Ducati"
 print(motorcycles)
-# The method append add a value to the list in the last possition
+# The method append add a value to the list in the last position
 motorcycles = ['Honda', 'Yamaha', 'Suzuki']
 print(motorcycles)
 motorcycles.append('Ducati')
