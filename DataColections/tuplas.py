@@ -18,5 +18,4 @@ tupla.index("Hello")
 tupla.count(100)
 
 # .append() will give an error
-
 tupla.append(100)
