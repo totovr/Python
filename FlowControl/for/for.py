@@ -1,10 +1,10 @@
-numbers = [1,2,3,4,5,6,7,8,9,10]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 index = 0
 while(index < len(numbers)):
     print(numbers[index])
-    index+=1
+    index += 1
 
-numbers = [1,2,3,4,5,6,7,8,9,10]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 for number in numbers:
     print(numbers)
 
@@ -13,13 +13,13 @@ for number in numbers:
 numbers
 
 index = 0
-numbers = [1,2,3,4,5,6,7,8,9,10]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 for number in numbers:
     numbers[index] *= 10
-    index+=1
+    index += 1
 numbers
 
-numbers = [1,2,3,4,5,6,7,8,9,10]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 for index, number in enumerate(numbers):
     numbers[index] *= 10
 numbers
@@ -28,7 +28,7 @@ chain = "Hello friends"
 for character in chain:
     print(character)
 
-// This will be an error
+# This will be an error
 chain = "Hello friends"
 for i, c in enumerate(chain):
     chain[i] = "*"
