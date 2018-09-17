@@ -13,6 +13,7 @@ def double_values(nums):
 
 ns = [10, 50, 100]
 double_values(ns)
+ns
 
 # Another way to implement the last syntaxis
 def double_values(nums):
@@ -21,6 +22,7 @@ def double_values(nums):
 
 ns = [10, 50, 100]
 double_values(ns)
+ns
 
 # With this way we can modify the value
 def double_value(num):
