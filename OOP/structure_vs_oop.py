@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[6]:
+# In[1]:
 
 
 """ Example of structure programation """
@@ -13,13 +13,13 @@ clients = [
    
 
 
-# In[7]:
+# In[2]:
 
 
 clients[0]["Name"]
 
 
-# In[8]:
+# In[3]:
 
 
 def show_client(clients, DNI):
@@ -31,13 +31,13 @@ def show_client(clients, DNI):
     print("client not found")
 
 
-# In[9]:
+# In[4]:
 
 
 show_client(clients, "22021992")
 
 
-# In[10]:
+# In[5]:
 
 
 def erase_client(clients, DNI):
@@ -49,7 +49,7 @@ def erase_client(clients, DNI):
     print("client not found")
 
 
-# In[11]:
+# In[6]:
 
 
 erase_client(clients, "22021992")
@@ -61,15 +61,17 @@ erase_client(clients, "22021992")
 
 # <div class="pagebreak"></div>
 
-# In[15]:
+# # This is an example of a Class
+
+# In[38]:
 
 
 class Client:
     
-    def __init__(self, dni, name, lastName):
-        self.dni = dni
-        self.nombre = name
-        self.apellidos = lastName
+    def __init__(self, DNI, name, lastName):
+        self.DNI = DNI
+        self.name = name
+        self.lastName = lastName
         
     def __str__(self):
         return '{} {}'.format(self.name,self.lastName)
@@ -80,30 +82,72 @@ class Company:
     def __init__(self, clients=[]):
         self.clients = clients
         
-    def mostrar_cliente(self, dni=None):
+    def show_clients(self, DNI=None):
         for c in self.clients:
-            if c.dni == dni:
+            if c.DNI == DNI:
                 print(c)
                 return
         print("The user was not found")
     
-    def borrar_cliente(self, dni=None):
+    def erase_client(self, DNI = None):
         for i,c in enumerate(self.clients):
-            if c.dni == dni:
+            if c.DNI == DNI:
                 del(self.clients[i])
                 print(str(c),"> ERASED")
                 return
         print("Client not found")
 
 
-# In[16]:
+# In[39]:
 
 
 Tono = Client(22021992, "Antonio", "Vega")
 
 
-# In[17]:
+# In[40]:
 
 
 Tono
+
+
+# In[41]:
+
+
+Alex = Client("11042005", "Alexandro", "Vega")
+
+
+# In[42]:
+
+
+Alex
+
+
+# In[43]:
+
+
+company = Company(clients = [Tono, Alex])
+
+
+# In[44]:
+
+
+company.clients
+
+
+# In[45]:
+
+
+company.show_clients(DNI = "11042005")
+
+
+# In[46]:
+
+
+company.erase_client(DNI = "11042005")
+
+
+# In[47]:
+
+
+company.clients
 
