@@ -10,8 +10,7 @@ class Movie:
         return "{} ({})".format(self.title, self.launched)
 
 class Catalogue:
-    movies = []
-
+    #movies = []
     def __init__(self, movies = []):
         self.movies = movies
 
