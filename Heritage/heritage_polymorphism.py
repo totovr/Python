@@ -84,11 +84,13 @@ for p in products:
     elif( isinstance(p, Book) ):
         print(p.reference,p.name,p.isbn)
 
+# The p variable is a local variable
 def discount_product(p, discount):
     """ Give discount of a product that is in the list"""
     p.pfp = p.pfp - (p.pfp/100 * discount)
     return p
 
+# food type
 p_discount = discount_product(f, 10)
 print(p_discount)
 
