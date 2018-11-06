@@ -77,3 +77,6 @@ def catalogue(list_vehicles, wheels = None):
                 print("{} {}".format(type(v).__name__, v))
 
 catalogue(vehicles, 2)
+
+c = Car("blue", 4, 180, 1200)
+type(c).__name__

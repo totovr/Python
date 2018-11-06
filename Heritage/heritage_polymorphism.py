@@ -75,7 +75,7 @@ for p in products:
 for p in products:
     print(p.author)
 
-# This method is to check if an object if of the type that is evaluating
+# This method is to check if an object is of the type that is evaluating
 for p in products:
     if( isinstance(p, Ornament) ):
         print(p.reference,p.name)
