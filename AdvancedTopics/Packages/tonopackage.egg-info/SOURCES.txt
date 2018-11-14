@@ -1,0 +1,10 @@
+setup.py
+package/__init__.py
+package/bye/__init__.py
+package/bye/goodbyes.py
+package/hello/__init__.py
+package/hello/greetings.py
+tonopackage.egg-info/PKG-INFO
+tonopackage.egg-info/SOURCES.txt
+tonopackage.egg-info/dependency_links.txt
+tonopackage.egg-info/top_level.txt
