@@ -6,11 +6,6 @@
 #from greetings import *
 #greeting()
 
-# With this we will import just the class
-#from greetings import Greeting
-
-#Greeting()
-
 # Import a module that is located in a different path
 # To import the module that we create in the sys path
 import sys
