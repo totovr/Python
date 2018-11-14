@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name="tonopackage",
+    name="package",
     version="0.1",
     description="This is a package example",
     author="Tono Vega",

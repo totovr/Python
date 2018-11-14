@@ -1,0 +1,10 @@
+setup.py
+package/__init__.py
+package.egg-info/PKG-INFO
+package.egg-info/SOURCES.txt
+package.egg-info/dependency_links.txt
+package.egg-info/top_level.txt
+package/bye/__init__.py
+package/bye/goodbyes.py
+package/hello/__init__.py
+package/hello/greetings.py
