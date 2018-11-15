@@ -1,3 +1,4 @@
+# This pragram import a module that do operations
 from operations import * 
 
 a, b, c, d = (10, 5, 0, "Hello")
