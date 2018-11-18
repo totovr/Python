@@ -25,9 +25,18 @@ class Manager:
 
         for cTemp in self.characterL:
             if cTemp.cT == p.cT:
+                # print("This character is already playing")
                 return
         self.characterL.append(p)
         self.save()
+    
+    def remove_character(self, cName):
+        for cTemp in self.characterL:
+            if cTemp.cT == cName:
+                print("{} has been removed".format(cName))
+                self.characterL.remove(cTemp)
+                self.save()
+                return 
 
     def show(self):
         if len(self.characterL) == 0:
@@ -48,14 +57,9 @@ class Manager:
             print("{} characters were loaded".format(len(self.characterL)))
     
     def save(self):
-        file = open('game.pckl', 'wb+')
+        file = open('game.pckl', 'wb')
         pickle.dump(self.characterL, file)
         file.close()
-
-    # Destroy the class
-    def __del__(self):
-        self.save() # automatic save
-        print("The catalogue was saved")
 
 # Create the manager
 c = Manager()
@@ -63,8 +67,8 @@ c = Manager()
 c.show()
 # Add the movies
 c.add_character( Character("Caballero",4,2,4,2) )
-c.add_character( Character("Caballero",4,2,4,2) )
-# Show again the catalogue
+c.add_character( Character("Wizard",4,2,4,2) )
+# Show again the game catalogue
+c.remove_character("Wizard")
 c.show()
-# Delate the catalogue of the ram memory, the file will persist in the folder
-del(c)
+
