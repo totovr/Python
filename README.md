@@ -1,80 +1,116 @@
-# Python
+Machine Learning Notebooks
+==========================
 
-## What is Python?
+This project aims at teaching you the fundamentals of Machine Learning in
+python. It contains the example code and solutions to the exercises in my O'Reilly book [Hands-on Machine Learning with Scikit-Learn and TensorFlow](http://shop.oreilly.com/product/0636920052289.do):
 
-Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.
+[![book](http://akamaicovers.oreilly.com/images/0636920052289/cat.gif)](http://shop.oreilly.com/product/0636920052289.do)
 
-## Why Learn Python ?
+Simply open the [Jupyter](http://jupyter.org/) notebooks you are interested in:
 
-According to GitHub [Octoverse](https://octoverse.github.com) Python is the second most popular programming language with more than 1M pull requests opened on 2017 and for the IEEE [Spectrum Rank](https://spectrum.ieee.org/computing/software/the-2017-top-programming-languages) python has became the most popular programming language in the 2017 displacing languages like C or Java, also, Python has a lot of packages and libraries for all uses like data science, game programming, web development, astronomy, AI. The names of these libraries and references are listed [here](https://github.com/totovr/Python/blob/master/LIBRARIES_LIST.md).
+* Using [jupyter.org's notebook viewer](http://nbviewer.jupyter.org/github/ageron/handson-ml/blob/master/index.ipynb)
+    * note: [github.com's notebook viewer](https://github.com/ageron/handson-ml/blob/master/index.ipynb) also works but it is slower and the math formulas are not displayed correctly,
+* or by cloning this repository and running Jupyter locally. This option lets you play around with the code. In this case, follow the installation instructions below.
 
-## Getting Started
+# Installation
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+First, you will need to install [git](https://git-scm.com/), if you don't have it already.
 
-### Prerequisites
+Next, clone this repository by opening a terminal and typing the following commands:
 
-* Last stable version of Python
-* Anaconda
-* A computer with OSX, Windows, Linux
+    $ cd $HOME  # or any other development directory you prefer
+    $ git clone https://github.com/ageron/handson-ml.git
+    $ cd handson-ml
 
-### Installing
+If you do not want to install git, you can instead download [master.zip](https://github.com/ageron/handson-ml/archive/master.zip), unzip it, rename the resulting directory to `handson-ml` and move it to your development directory.
 
-* Install the last stable version of Python, in this case I will install Python 3.3.6, you can download it from this page [Python](https://www.python.org/downloads/)
+If you want to go through chapter 16 on Reinforcement Learning, you will need to [install OpenAI gym](https://gym.openai.com/docs) and its dependencies for Atari simulations.
 
-* Install Anaconda from the official page (for Python 3.6) [Anaconda](https://www.anaconda.com/download/#macos)
+If you are familiar with Python and you know how to install Python libraries, go ahead and install the libraries listed in `requirements.txt` and jump to the [Starting Jupyter](#starting-jupyter) section. If you need detailed instructions, please read on.
 
-## Check installation:
+## Python & Required Libraries
+Of course, you obviously need Python. Python 2 is already preinstalled on most systems nowadays, and sometimes even Python 3. You can check which version(s) you have by typing the following commands:
 
-1.- Open a terminal
+    $ python --version   # for Python 2
+    $ python3 --version  # for Python 3
 
-2.- type:
+Any Python 3 version should be fine, preferably ≥3.5. If you don't have Python 3, I recommend installing it (Python ≥2.6 should work, but it is deprecated so Python 3 is preferable). To do so, you have several options: on Windows or MacOSX, you can just download it from [python.org](https://www.python.org/downloads/). On MacOSX, you can alternatively use [MacPorts](https://www.macports.org/) or [Homebrew](https://brew.sh/). If you are using Python 3.6 on MacOSX, you need to run the following command to install the `certifi` package of certificates because Python 3.6 on MacOSX has no certificates to validate SSL connections (see this [StackOverflow question](https://stackoverflow.com/questions/27835619/urllib-and-ssl-certificate-verify-failed-error)):
 
-    python --version
+    $ /Applications/Python\ 3.6/Install\ Certificates.command
 
-4.- If you got the next result the installation of Python 3 is complete:
+On Linux, unless you know what you are doing, you should use your system's packaging system. For example, on Debian or Ubuntu, type:
 
-<img src="https://github.com/totovr/Python/blob/master/Images/version.png" width="300">
+    $ sudo apt-get update
+    $ sudo apt-get install python3
 
-5.- Check this link to know how to use [Anaconda](https://github.com/totovr/Python/tree/Anaconda)
+Another option is to download and install [Anaconda](https://www.continuum.io/downloads). This is a package that includes both Python and many scientific libraries. You should prefer the Python 3 version.
 
-## Run simple code:
+If you choose to use Anaconda, read the next section, or else jump to the [Using pip](#using-pip) section.
 
-You can find [here](https://github.com/totovr/Python/tree/Anaconda/Basic) a simple example
+## Using Anaconda
+When using Anaconda, you can optionally create an isolated Python environment dedicated to this project. This is recommended as it makes it possible to have a different environment for each project (e.g. one for this project), with potentially different libraries and library versions:
 
-## More examples
+    $ conda create -n mlbook python=3.5 anaconda
+    $ source activate mlbook
 
-This [branch](https://github.com/totovr/Python/tree/Jupyter) a simple example has programs in Jupyter 
+This creates a fresh Python 3.5 environment called `mlbook` (you can change the name if you want to), and it activates it. This environment contains all the scientific libraries that come with Anaconda. This includes all the libraries we will need (NumPy, Matplotlib, Pandas, Jupyter and a few others), except for TensorFlow, so let's install it:
 
-## Also you can use the next editors to build programs:
+    $ conda install -n mlbook -c conda-forge tensorflow
 
-* [Atom](https://atom.io/) and the package [Hydrogen](https://atom.io/packages/hydrogen)
-* [Pycharm](https://www.jetbrains.com/pycharm/)
+This installs the latest version of TensorFlow available for Anaconda (which is usually *not* the latest TensorFlow version) in the `mlbook` environment (fetching it from the `conda-forge` repository). If you chose not to create an `mlbook` environment, then just remove the `-n mlbook` option.
 
-## Contributing
+Next, you can optionally install Jupyter extensions. These are useful to have nice tables of contents in the notebooks, but they are not required.
 
-Please read [CONTRIBUTING.md](https://github.com/totovr/Processing/blob/master/CONTRIBUTING.md) for details of the code of conduct, and the process for submitting pull requests to us.
+    $ conda install -n mlbook -c conda-forge jupyter_contrib_nbextensions
 
-## Versioning
+You are all set! Next, jump to the [Starting Jupyter](#starting-jupyter) section.
 
-I use [SemVer](http://semver.org/) for versioning.
+## Using pip 
+If you are not using Anaconda, you need to install several scientific Python libraries that are necessary for this project, in particular NumPy, Matplotlib, Pandas, Jupyter and TensorFlow (and a few others). For this, you can either use Python's integrated packaging system, pip, or you may prefer to use your system's own packaging system (if available, e.g. on Linux, or on MacOSX when using MacPorts or Homebrew). The advantage of using pip is that it is easy to create multiple isolated Python environments with different libraries and different library versions (e.g. one environment for each project). The advantage of using your system's packaging system is that there is less risk of having conflicts between your Python libraries and your system's other packages. Since I have many projects with different library requirements, I prefer to use pip with isolated environments. Moreover, the pip packages are usually the most recent ones available, while Anaconda and system packages often lag behind a bit.
 
-## Authors
+These are the commands you need to type in a terminal if you want to use pip to install the required libraries. Note: in all the following commands, if you chose to use Python 2 rather than Python 3, you must replace `pip3` with `pip`, and `python3` with `python`.
 
-### Antonio Vega Ramirez:
+First you need to make sure you have the latest version of pip installed:
 
-* [Github](https://github.com/totovr)
-* [Twitter](https://twitter.com/SpainDice)
+    $ pip3 install --user --upgrade pip
 
-### Enrique Calderon Sastre:
+The `--user` option will install the latest version of pip only for the current user. If you prefer to install it system wide (i.e. for all users), you must have administrator rights (e.g. use `sudo pip3` instead of `pip3` on Linux), and you should remove the `--user` option. The same is true of the command below that uses the `--user` option.
 
-* [Github](https://github.com/ecaldrn)
-* [Twitter](https://twitter.com/ecaldrn1)
+Next, you can optionally create an isolated environment. This is recommended as it makes it possible to have a different environment for each project (e.g. one for this project), with potentially very different libraries, and different versions:
 
-## License
+    $ pip3 install --user --upgrade virtualenv
+    $ virtualenv -p `which python3` env
 
-This project is licensed under The MIT License (MIT) - see the [LICENSE.md](https://github.com/totovr/Python/blob/master/LICENSE.md) file for details
+This creates a new directory called `env` in the current directory, containing an isolated Python environment based on Python 3. If you installed multiple versions of Python 3 on your system, you can replace `` `which python3` `` with the path to the Python executable you prefer to use.
 
-## For more references you can check:
+Now you must activate this environment. You will need to run this command every time you want to use this environment.
 
-* [python.org](https://www.python.org/doc/essays/blurb/)
+    $ source ./env/bin/activate
+
+Next, use pip to install the required python packages. If you are not using virtualenv, you should add the `--user` option (alternatively you could install the libraries system-wide, but this will probably require administrator rights, e.g. using `sudo pip3` instead of `pip3` on Linux).
+
+    $ pip3 install --upgrade -r requirements.txt
+
+Great! You're all set, you just need to start Jupyter now.
+
+## Starting Jupyter
+If you want to use the Jupyter extensions (optional, they are mainly useful to have nice tables of contents), you first need to install them:
+
+    $ jupyter contrib nbextension install --user
+
+Then you can activate an extension, such as the Table of Contents (2) extension:
+
+    $ jupyter nbextension enable toc2/main
+
+Okay! You can now start Jupyter, simply type:
+
+    $ jupyter notebook
+
+This should open up your browser, and you should see Jupyter's tree view, with the contents of the current directory. If your browser does not open automatically, visit [localhost:8888](http://localhost:8888/tree). Click on `index.ipynb` to get started!
+
+Note: you can also visit [http://localhost:8888/nbextensions](http://localhost:8888/nbextensions) to activate and configure Jupyter extensions.
+
+Congrats! You are ready to learn Machine Learning, hands on!
+
+# Contributors
+I would like to thank everyone who contributed to this project, either by providing useful feedback, filing issues or submitting Pull Requests. Special thanks go to Steven Bunkley and Ziembla who created the `docker` directory.
