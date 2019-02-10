@@ -10,6 +10,4 @@ root.config(bd=15)
 milk = IntVar()
 sugar = IntVar()
 
-Laav
-
 root.mainloop()
