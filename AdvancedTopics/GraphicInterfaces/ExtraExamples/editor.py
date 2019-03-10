@@ -6,10 +6,11 @@ mainPath = ""
 
 
 def new_file():
-    global mainPath
+    global fileMainPath
     messageDisplay.set("New file")
-    mainPath = ""
-    centralText.delete(1.0, "end") # erase from the first character until the end
+    fileMainPath = ""
+    # erase from the first character until the end
+    centralText.delete(1.0, "end")
 
 
 def open_file():
@@ -18,30 +19,55 @@ def open_file():
 
     fileMainPath = FileDialog.askopenfilename(
         initialdir='.',
-        filetypes=(  
-            ("Text files", "*.txt"),  
-        ), 
+        filetypes=(
+            ("Text files", "*.txt"),
+        ),
         title="Open a text file"
     )
 
     # Si la ruta es válida abrimos el contenido en lectura
-    if fileMainPath != "":  
-        fichero = open(fileMainPath, 'r')
-        contenido = fichero.read()
+    if fileMainPath != "":
+        currentFile = open(fileMainPath, 'r')
+        currentFileContent = currentFile.read()
         centralText.delete(1.0, 'end')           # We check that if is empty
-        centralText.insert('insert', contenido)  # Insert the open script content
-        fichero.close()                    # Close the file
+        # Insert the open script content
+        centralText.insert('insert', currentFileContent)
+        currentFile.close()                    # Close the file
         root.title(fileMainPath + " - Tono editor")  # Change the title
 
 
 def save_file():
-    global mainPath
+    global fileMainPath
     messageDisplay.set("Save file")
+
+    if fileMainPath != "":
+        # Get the text that the use wrote but with no the return of line
+        centralTextContent = centralText.get(1.0, 'end-1c')
+        currentFile = open(fileMainPath, 'w+')         # Write and read
+        currentFile.write(centralTextContent)           # Write the text
+        currentFile.close()
+        messageDisplay.set('File saved correctly')
+    else:
+        save_file_as()  # If the file does not exist
 
 
 def save_file_as():
-    global mainPath
+    global fileMainPath
     messageDisplay.set("Save file as")
+
+    currentFile = FileDialog.asksaveasfile(title="Save file", mode='w',
+                                           defaultextension=".txt")
+
+    if currentFile is not None:
+        fileMainPath = currentFile.name  # The atribute name is the route if is open
+        centralTextContent = centralText.get(1.0, 'end-1c')
+        currentFile = open(fileMainPath, 'w+')
+        currentFile.write(centralTextContent)
+        currentFile.close()
+        messageDisplay.set('File saved correctly')
+    else:
+        messageDisplay.set('File was not save')
+        fileMainPath = ""
 
 
 root = Tk()
