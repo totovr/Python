@@ -10,12 +10,12 @@ seekerConectionDB = connectionDB.cursor()
 # seekerConectionDB.execute("CREATE TABLE users (name VARCHAR(100), age INTEGER, email VARCHAR(100))")
 
 # Add one value
-# seekerConectionDB.execute("INSERT INTO users VALUES ('Antonio', 27 , 'tonovr@hiroshima-u.ac.jp')")
+# seekerConectionDB.execute("INSERT INTO users VALUES ('Antonio', 27, 'tonovr@hiroshima-u.ac.jp')")
 
 # Get all the data from the db
 # seekerConectionDB.execute("SELECT * FROM users")
-# Recover the just one user, starting for the first one
-# userRecover = seekerConectionDB.fetchone() # if we recover again this will move the seeker
+# Recover just one user, starting for the first one
+# userRecover = seekerConectionDB.fetchone() # if we recover again this will move the seeker to the next position
 # print(userRecover)
 # print(userRecover[0]) # the userRecover will return a tuple
 
@@ -26,7 +26,7 @@ seekerConectionDB = connectionDB.cursor()
 #     ("Rocio", 50, "rocio@example.com")
 # ]
 
-# Now we will execute the next commando to add many values
+# Now we will execute the next command to add many values
 # seekerConectionDB.executemany("INSERT INTO users VALUES (?,?,?)", users)
 
 # Recover all the users 
