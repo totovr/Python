@@ -2,8 +2,8 @@ import sqlite3
 
 # conexionDB = sqlite3.connect("users.db")
 # conexionDB = sqlite3.connect("products.db")
-
 conexionDB = sqlite3.connect("users_autoincremental.db")
+
 seekerDB = conexionDB.cursor()
 
 # To create a table with primary key
@@ -72,7 +72,7 @@ seekerDB = conexionDB.cursor()
 # seekerDB.executemany("INSERT INTO users VALUES (null,?,?,?,?)", users)
 
 # if we just want to add one user
-seekerDB.execute("INSERT INTO users VALUES (null, '55555555D', 'David', '24', 'david@example.com')")
+# seekerDB.execute("INSERT INTO users VALUES (null, '55555555D', 'David', '24', 'david@example.com')")
 
 conexionDB.commit()
 conexionDB.close()
