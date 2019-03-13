@@ -13,7 +13,10 @@ seekerDB = conexionDB.cursor()
 
 # If we want to modify one value
 # seekerDB.execute("UPDATE users SET name='Antonio Vega' WHERE dni='11111111A'")
+
+# If we want to modify many values
 # seekerDB.execute("UPDATE users SET name='Antonio Vega', age=26 WHERE dni='11111111A'")
+
 # If we dont use WHERE it will update all the users
 
 # If we want to delate an user
