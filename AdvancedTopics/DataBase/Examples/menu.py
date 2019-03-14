@@ -22,7 +22,7 @@ categories = seekerDB.execute("SELECT * FROM category").fetchall()
 
 for category in categories:
     # Add the categories
-    Label(root, text=category[1], fg="white", font=("Times New Roman", 20, "bold italic")).pack()
+    Label(root, text=category[1], fg="darkgray", font=("Times New Roman", 20, "bold italic")).pack()
     # Get all the dishes  
     dishDB = conexionDB.execute("SELECT * FROM dish WHERE category_id={}".format(category[0])).fetchall()
     for dish in dishDB:
@@ -31,6 +31,6 @@ for category in categories:
 conexionDB.close()
 
 # Show a label with the price
-Label(root, text="60 pesos (IVA inclu) ", fg="darkblue", font=("Times New Roman", 20, "bold italic")).pack(side="right")
+Label(root, text="60 pesos (IVA inclu.) ", fg="darkblue", font=("Times New Roman", 20, "bold italic")).pack(side="right")
 
 root.mainloop()
